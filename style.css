@@ -1,0 +1,166 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(145deg, #0CAEF3, #000304);
+    background-size: 200% 200%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@-moz-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+.container {
+    width: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: -15px 20px 15px rgba(0, 0, 0, 0.3); 
+    background-color: rgba(235, 235, 235, 0.9);
+}
+
+/* Contact Us */
+
+h2 {
+    font-family: 'Titan One', cursive;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #215E78;
+}
+
+/* Input and Textarea */
+
+.form {
+    text-align: center;
+}
+input {
+    border: 0;
+    margin-bottom: -12px;
+    height: 40px;
+    border-radius: 17px;
+}
+textarea {
+    resize: none;
+    border-radius: 18px;
+ }
+textarea, input {
+    width: 80%;
+    border: 1px solid transparent;
+}
+textarea:focus, input:focus {
+    outline: transparent;
+}
+
+/* Submit button */
+
+.submit {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#button {
+    font-family: 'Titan One', cursive;
+    font-size: 23px;
+    width: 120px;
+    height: 45px;
+    border: 0;
+    border-radius: 20px;
+    background: linear-gradient( #0CAEF3, #10607a);
+    color: white;
+    margin-top: 10px;
+    box-shadow: -4px 5px 5px rgba(0, 0, 0, 0.3);    
+}
+#button:hover {
+    border: 2px solid #10607a;
+}
+
+/* Placeholder text color */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #266E8C;
+    opacity: 0.3;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #266E8C;
+    opacity: 0.3;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #266E8C;
+    opacity: 0.3;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #266E8C;
+    opacity: 0.3;
+}
+
+/* Error text */
+
+.error {color: red;}
+
+/* Social Media */
+
+p {
+    font-size: 17px;
+    position: relative;
+    top: 13px;
+    text-align: center;
+    color: #266E8C;
+    opacity: 0.3;
+}
+.social-media {
+    text-align: center;
+}
+button {
+    width: 45px;
+    height: 45px;
+    border: 1px solid transparent;
+    box-shadow: -4px 10px 10px rgba(0, 0, 0, 0.3);  
+    border-radius: 100%;
+    background-color: #C3CFD9;
+    margin-right: 15px;
+    position: relative;
+    top: 20px;    
+}
+button:hover {
+    border: 2px solid #60A8C8;
+}
+i {
+    color: #60A8C8;
+}
+.fa {
+    font-size: 22px;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 900px) {
+    .container {width: 40% !important;}
+}
+@media only screen and (max-width: 850px) {
+    .container {width: 70%;}
+    h2 {font-size: 40px;}
+    input {height: 40px;}
+    textarea {height: 200px;}
+    #button {font-size: 20px; width: 110px; height: 40px;}
+    button {width: 40px; height: 40px;}
+}
+@media only screen and (max-width: 450px) {
+    .container {width: 90%;}
+    h2 {font-size: 32px;}
+    input {height: 38px;}
+    textarea {height: 150px;}
+}
